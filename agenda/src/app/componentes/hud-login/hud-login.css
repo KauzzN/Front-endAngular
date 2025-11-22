@@ -1,0 +1,92 @@
+.container {
+    background-color: #3B3B3B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 40px;
+    color: #ffffff96;
+    gap: 10px;
+    max-width: 400px;
+    width: 90%;
+    margin-top: 300px;
+    transform: scale(1.20);
+}
+
+.container small {
+    margin-bottom: 25px;
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.titulo {
+    color: #fff;
+    font-family: "Righteous", sans-serif;
+    font-size: 26px;
+}
+
+.container input {
+    background-color: #2D2D2D;
+    border-radius: 10px;
+    padding: 10px 12px;
+    border: none;
+    color: #fff;
+}
+
+.recover {
+    margin-top: 35px;
+    color: #fff;
+    font-family: "Righteous", sans-serif;
+}
+
+.btn-login {
+    background-color: #525252;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+    color: #fff;
+    font-family: "Righteous", sans-serif;
+    transition: 0.30s ease;
+}
+
+.btn-login:hover {
+    background-color: #6F31FF;
+    cursor: pointer;
+}
+
+.cont-cadastro {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cont-cadastro h2 {
+    margin-top: -5px;
+    font-family: "Righteous", sans-serif;
+}
+
+.cont-cadastro small {
+    color: #0000009f;
+}
+
+.btn-cadastro {
+    background-color: #2D2D2D;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    transition: 0.30s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-cadastro:hover {
+    background-color: #6F31FF;
+    cursor: pointer;
+}

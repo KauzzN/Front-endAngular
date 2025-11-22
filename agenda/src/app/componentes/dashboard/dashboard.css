@@ -1,0 +1,139 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+
+body {
+    background-color: #282828; 
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    ;
+}
+
+.titulo { font-size: 24px; margin-bottom: 5px;
+color: #fff; }
+.bem-vindo, .desc { color: #9ca3af; display: block; margin-bottom: 20px; }
+
+.infos-fast {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background-color: #3B3B3B;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #2d2d30;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.big-number {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.main-content-grid {
+    display: grid;
+    
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .main-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section-agendamentos, .section-clientes {
+    background-color: #3B3B3B;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #525252;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.horario-box {
+    background-color: #0d47a1; 
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.info-cliente { flex: 1; } 
+.info-cliente .nome { font-weight: bold; font-size: 16px; }
+.info-cliente small { color: #9ca3af; }
+
+.status { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+.badge { font-size: 12px; margin-bottom: 4px; color: #4ade80; }
+.badge.pendente { color: #facc15; } 
+
+
+.section-clientes {
+    background-color: #3B3B3B; 
+    border-radius: 12px;
+}
+
+.cliente-card {
+    background-color: #525252;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #374151;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.visitas {
+    font-size: 12px;
+    background-color: #2d2d30;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.btn-hud {
+    background-color: #27272a;
+    color: white;
+    border: 1px solid #3f3f46;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.full-width { width: 100%; margin-top: 10px; }
+.btn-hud:hover { background-color: #6F31FF; }
