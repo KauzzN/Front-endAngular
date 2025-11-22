@@ -1,0 +1,151 @@
+.container {
+    background-color: #3B3B3B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 40px;
+    color: #ffffff73;
+    gap: 10px;
+    max-width: 400px;
+    width: 90%;
+    margin-top: 300px;
+    transform: scale(1.20);
+}
+
+.titulo {
+    color: #fff;
+    font-family: "Righteous", sans-serif;
+    margin-top: 15px;
+}
+
+.info-desc {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.input-text {
+    display: flex;
+    background-color: #2D2D2D;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    color: #ffffff73;
+}
+
+.info-ask {
+    margin-bottom: 20px;
+}
+
+.container small {
+    color: #ffffff73;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    background-color: #2D2D2D;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    margin-bottom: 15px;
+    color: #ffffff73;
+}
+
+.genero-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.genero-opcao {
+    display: flex;  
+    align-items: center;
+    gap: 12px;
+    color: #ffffff73;
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+}
+
+.genero-opcao input {
+    display: none;
+}
+
+.genero-opcao .box {
+    width: 25px;
+    height: 25px;
+    background-color: #2D2D2D;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.genero-opcao input:checked + .box {
+    background-color: #6F31FF;
+}
+
+.label-text {
+    color: #ffffff73;
+    font-size: 12px;
+}
+
+.termos {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.termos input {
+    display: none;
+}
+
+.termos .term-box {
+    width: 20px;
+    height: 17px;
+    background-color: #2D2D2D;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.termos input:checked + .term-box {
+    background-color: #6F31FF;
+}
+
+.term-text {
+    font-size: 10px;
+    margin-left: 10px;
+    color: #ffffff73;
+}
+
+.btn-cadastro{
+    background-color: #525252;
+    padding:8px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Righteous", sans-serif;
+    color: #fff;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.btn-cadastro:hover {
+    background-color: #6F31FF;
+}
+
+.container a {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    transition: 0.25s ease;
+}
+
+.container a:hover {
+    background-color: #6F31FF;
+    padding: 10px;
+    border-radius: 6px;
+}
