@@ -1,0 +1,128 @@
+.clientes-container {
+  padding: 20px;
+  color: #fff;
+  background: #141416;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.novo-btn {
+  background: #2d7df4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.novo-btn:hover {
+  opacity: 0.8;
+}
+
+.filtros {
+  margin: 20px 0;
+  display: flex;
+  gap: 16px;
+}
+
+.filtros input {
+  flex: 1;
+  padding: 12px;
+  background: #1c1d21;
+  border: 1px solid #2b2d31;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.selects {
+  display: flex;
+  gap: 12px;
+}
+
+select {
+  padding: 12px;
+  background: #1c1d21;
+  border: 1px solid #2b2d31;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.lista-clientes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cliente-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1b1f;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #2b2d31;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #2d7df4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  margin: 4px 0;
+  color: #c5c5c5;
+}
+
+.email,
+.tel,
+.servico {
+  margin: 2px 0;
+  color: #a7a7a7;
+}
+
+.datas {
+  text-align: right;
+  margin-right: 20px;
+  min-width: 160px;
+}
+
+.proxima {
+  color: #4ccd4c;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agendar,
+.detalhes {
+  background: #2d7df4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.detalhes {
+  background: #3a3d44;
+}
