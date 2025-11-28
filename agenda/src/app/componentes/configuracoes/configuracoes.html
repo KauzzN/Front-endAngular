@@ -1,0 +1,86 @@
+<div class="page-container">
+
+  <div class="header">
+    <h1>Configurações</h1>
+    <p>Ajuste preferências do sistema e da conta</p>
+  </div>
+
+  <div class="settings-grid">
+
+    <!-- Aparência -->
+    <div class="card">
+      <h2>Aparência</h2>
+
+      <label class="option">
+        <span>Tema do sistema</span>
+        <select [(ngModel)]="theme">
+          <option value="dark">Escuro</option>
+          <option value="light">Claro</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Notificações -->
+    <div class="card">
+      <h2>Notificações</h2>
+
+      <label class="toggle">
+        <input type="checkbox" [(ngModel)]="notificacoes.email">
+        <span>Email</span>
+      </label>
+
+      <label class="toggle">
+        <input type="checkbox" [(ngModel)]="notificacoes.sms">
+        <span>SMS</span>
+      </label>
+
+      <label class="toggle">
+        <input type="checkbox" [(ngModel)]="notificacoes.sistema">
+        <span>Notificações do Sistema</span>
+      </label>
+    </div>
+
+    <!-- Dados da Empresa -->
+    <div class="card">
+      <h2>Dados da Empresa</h2>
+
+      <label class="option">
+        <span>Nome</span>
+        <input type="text" [(ngModel)]="dadosEmpresa.nome">
+      </label>
+
+      <label class="option">
+        <span>Email</span>
+        <input type="text" [(ngModel)]="dadosEmpresa.email">
+      </label>
+
+      <label class="option">
+        <span>Telefone</span>
+        <input type="text" [(ngModel)]="dadosEmpresa.telefone">
+      </label>
+
+      <label class="option">
+        <span>Endereço</span>
+        <input type="text" [(ngModel)]="dadosEmpresa.endereco">
+      </label>
+    </div>
+
+    <!-- Segurança -->
+    <div class="card">
+      <h2>Segurança</h2>
+
+      <label class="option">
+        <span>Alterar Senha</span>
+        <button class="btn-outline">Mudar</button>
+      </label>
+
+      <label class="option">
+        <span>Autenticação em 2 etapas</span>
+        <button class="btn-outline">Configurar</button>
+      </label>
+    </div>
+
+  </div>
+
+  <button class="btn-save" (click)="salvar()">Salvar Alterações</button>
+</div>

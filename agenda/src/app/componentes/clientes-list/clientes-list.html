@@ -1,0 +1,53 @@
+<div class="clientes-container">
+  <div class="header">
+    <h2>Clientes</h2>
+    <button class="novo-btn">+ Novo Cliente</button>
+  </div>
+
+  <div class="filtros">
+    <input type="text" placeholder="Buscar por nome, email ou telefone..." />
+
+    <div class="selects">
+      <select>
+        <option>Todas Visitas</option>
+        <option>+10 visitas</option>
+        <option>Novos</option>
+      </select>
+
+      <select>
+        <option>Todos</option>
+        <option>Ativos</option>
+        <option>Inativos</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="lista-clientes">
+    <div class="cliente-card" *ngFor="let c of clientes">
+      <div class="avatar">{{ c.nome[0] }}</div>
+
+      <div class="info">
+        <h3>{{ c.nome }}</h3>
+
+        <div class="stats">
+          <span>{{ c.visitas }} visitas</span>
+          <span>R$ {{ c.total }}</span>
+        </div>
+
+        <p class="email">{{ c.email }}</p>
+        <p class="tel">{{ c.telefone }}</p>
+        <p class="servico">Serviço preferido: <b>{{ c.servico }}</b></p>
+      </div>
+
+      <div class="datas">
+        <p class="ultima">Última: {{ c.ultima }}</p>
+        <p class="proxima" *ngIf="c.proxima">Próxima: {{ c.proxima }}</p>
+      </div>
+
+      <div class="acoes">
+        <button class="detalhes">Ver Detalhes</button>
+        <button class="agendar">Agendar</button>
+      </div>
+    </div>
+  </div>
+</div>
